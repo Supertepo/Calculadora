@@ -5,18 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/calculadora.css">
-    
-    <title>Calculadora</title>
+    <script type="text/javascript" src="scripts/calculadora.js" defer></script>
+    <script type="text/javascript" src="scripts/calculadoraCientifica.js" defer></script>
+    <title>Calculadora Científica</title>
 </head>
 
 <body onload="load()">
-    <h1>Calculadora basica</h1>
+    <h1>Calculadora Científica</h1>
 
     <div class="calculadora-container">
         <div class="calculadora-display">
             <input type="text" disabled="true" id="display">
         </div>
-        <div class="calculadora-cientifica-body ">
+        
+        <div class="calculadora-body calculadora-cientifica">
+            <div class="button-container">
+                <button id="buttonRaiz">√</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonPotencia">x²</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonPi">π</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonLog">log</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonLN">ln</button>
+            </div>
+
+            <div class="button-container">
+                <button id="buttonSin">sin</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonCos">cos</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonTan">tan</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonEXP">e</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonParentesisAbre">(</button>
+            </div>
+
+
             <div class="button-container">
                 <button id="buttonAC">AC</button>
             </div>
@@ -24,10 +59,13 @@
                 <button id="buttonSigno">+/-</button>
             </div>
             <div class="button-container">
-                <button id="buttonP">%</button>
+                <button id="buttonPorcentaje">%</button>
             </div>
             <div class="button-container">
-                <button id="buttonDiv">/</button>
+                <button id="buttonDivision">/</button>
+            </div>
+            <div class="button-container">
+                <button id="buttonDEL">DEL</button> 
             </div>
 
             <div class="button-container">
@@ -36,12 +74,16 @@
             <div class="button-container">
                 <button id="button8">8</button>
             </div>
-              <div class="button-container">
+            <div class="button-container">
                 <button id="button9">9</button>
             </div>
             <div class="button-container">
-                <button id="buttonMul">*</button>
+                <button id="buttonMultiplica">*</button>
             </div>
+            <div class="button-container">
+                <button id="buttonParentesisCierra">)</button>
+            </div>
+
             <div class="button-container">
                 <button id="button4">4</button>
             </div>
@@ -54,6 +96,10 @@
             <div class="button-container">
                 <button id="buttonResta">-</button>
             </div>
+             <div class="button-container">
+                <button id="buttonFactorial">n!</button>
+            </div>
+
             <div class="button-container">
                 <button id="button1">1</button>
             </div>
@@ -66,22 +112,22 @@
             <div class="button-container">
                 <button id="buttonSuma">+</button>
             </div>
+            <div class="button-container dos-columnas">
+                <button id="buttonCalcular">=</button>
+            </div>
+
             <div class="button-container">
                 <button id="buttonPunto">.</button>
             </div>
             <div class="button-container">
                 <button id="button0">0</button>
             </div>
-           </div>
-              <div class="button-container">
-                <button id="buttonCambio"><a href="index.html"><img src="images/maximise.svg" alt=""></a></button>
+            <div class="button-container">
+                 <button id="buttonCambio"><a href="index.html"><img src="images/maximise.svg" sizes="1" alt="Volver a la básica"></a></button>
             </div>
-            <div class="button-container dos-columnas">
-                <button id="buttonCalcular">=</button>
-            </div>
+            
         </div>
     </div>
 </body>
-<script type="text/javascript" src="scripts/calculadora.js" defer></script>
 
 </html>
