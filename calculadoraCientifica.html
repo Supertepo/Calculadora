@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/calculadora.css">
-    <script type="text/javascript" src="scripts/calculadora.js" defer></script>
+    
     <title>Calculadora</title>
 </head>
 
@@ -16,7 +16,7 @@
         <div class="calculadora-display">
             <input type="text" disabled="true" id="display">
         </div>
-        <div class="calculadora-body">
+        <div class="calculadora-cientifica-body ">
             <div class="button-container">
                 <button id="buttonAC">AC</button>
             </div>
@@ -24,10 +24,10 @@
                 <button id="buttonSigno">+/-</button>
             </div>
             <div class="button-container">
-                <button id="buttonPorcentaje">%</button>
+                <button id="buttonP">%</button>
             </div>
             <div class="button-container">
-                <button id="buttonDivision">/</button>
+                <button id="buttonDiv">/</button>
             </div>
 
             <div class="button-container">
@@ -40,7 +40,7 @@
                 <button id="button9">9</button>
             </div>
             <div class="button-container">
-                <button id="buttonMultiplica">*</button>
+                <button id="buttonMul">*</button>
             </div>
             <div class="button-container">
                 <button id="button4">4</button>
@@ -72,8 +72,9 @@
             <div class="button-container">
                 <button id="button0">0</button>
             </div>
+           </div>
               <div class="button-container">
-                <button id="buttonCambio"><a href="calculadoraCientifica.html"><img src="images/maximise.svg" sizes="1" alt=""></a></button>
+                <button id="buttonCambio"><a href="index.html"><img src="images/maximise.svg" alt=""></a></button>
             </div>
             <div class="button-container dos-columnas">
                 <button id="buttonCalcular">=</button>
@@ -81,5 +82,6 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="scripts/calculadora.js" defer></script>
 
 </html>
